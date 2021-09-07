@@ -27,10 +27,56 @@ header li a {
   text-transform: uppercase;
 }
 
+main .jambotrom {
+  height: 500px;
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+  position: relative;
+}
+main .container {
+  background-color: black;
+  text-align: center;
+}
+main .container .gallery {
+  display: flex;
+  width: calc(100% / 6 - 40px);
+}
+main .container .gallery .card {
+  margin: 20px;
+}
+main .container .gallery .card a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+main .container .gallery .card img {
+  width: 100px;
+  margin-right: 20px;
+}
+main .container .button2 {
+  width: 200px;
+}
+main .container .button2 h3 {
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
+  background-color: #0282F9;
+  text-align: center;
+}
+main .container .button {
+  width: 200px;
+}
+main .container .button h3 {
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
+  background-color: #0282F9;
+}
+
 footer {
   height: 300px;
   padding: 10px;
-  background-color: black;
+  background-image: url(../img/footer-bg.jpg);
   display: flex;
   justify-content: space-around;
 }
