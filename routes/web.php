@@ -22,3 +22,9 @@ Route::get('/comics', function () {
     $data = ['comics' => $data];
     return view('main', $data);
 })->name('comics');
+
+Route::get('/details/{id}', function ($id) {
+    $data = config('comics');
+    $data = ['comic' => $data[$id]];
+    return view('dettagli', $data);
+})->name('dettaglio');

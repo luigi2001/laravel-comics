@@ -11,9 +11,9 @@
         </div>
         <div class="gallery">
             <div class="card">
-                @foreach($comics as $comic)
+                @foreach($comics as $key => $comic)
                     <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                    <h3><a href="">{{ $comic['title'] }}</a></h3>
+                    <h3><a href="{{ route('dettaglio', ['id' => $key]) }}">{{ $comic['title'] }}</a></h3>
                 @endforeach
             </div>
         </div>
